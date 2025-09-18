@@ -15,7 +15,7 @@ body {
     font-family: "ABeeZee", sans-serif;
 }
 footer {
-    background: lightblue;
+    background: azure;
     padding: 10px;
     position: fixed;
     bottom: 0;
@@ -39,7 +39,7 @@ footer {
 }
 
 button {
-  background-color: azure;
+  background-color: lightblue;
   border: none;
   padding: 10px 20px;
   margin: 5px;
