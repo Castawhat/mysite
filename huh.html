@@ -10,9 +10,56 @@
 <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
     <header> <h1>The point of no return</h1> </header>
 <body>
+    <pre>
+i don’t know if anyone will read this.
+the silence hEre feels heavier than sound.
 
+they said crossing was A mistake. the walls were supposed to keep me safe, but i couldn’t Stay—
+not when the air inside kept getting thinner.
+
+the path beyond the gate wasn’t marked. 
+i counted every step, afraid if i lost track i’d disappear completely. 
+at step Twenty-one, i stopped counting. that was the point of no return.
+
+i can still hear the voices. not words exactly, more like a rhythm pressing against the inside of my skull. 
+
+if you’ve made it this far, you’ve probably heard them too. 
+outside the city walls it's are quieter, almost slient.
+don’t let them decIde your pace. don’t let them hold your hands down.
+
+follow the Stray sight. even a faint ember is Usually enough.
+
+and if i don’t write again—
+remember i tried to get Past them.
+</pre>
 </body>
 <footer>
-<button onclick="window.location.href='https://castawhat.github.io/mysite/huh/'">Past the point of no return. No going back now...</button>
+<button onclick="window.location.href='https://castawhat.github.io/mysite/huh/'">You're past the point of no return. No going back now...</button>
 </html>
-</html>
+<script>
+  const PASSWORD = "paladinstrait"; 
+
+  function showContent() {
+    document.body.style.display = '';
+  }
+
+  function hideContent() {
+    document.body.style.display = 'none';
+  }
+
+  hideContent();
+  let attempts = 0;
+  while (attempts < 3) {
+    const input = prompt("Enter the point of no return.");
+    if (input === PASSWORD) {
+      showContent();
+      break;
+    } else {
+      attempts++;
+      alert("Nuh Uh.");
+    }
+  }
+  if (attempts === 2) {
+    alert("Your access to the point of no return has been denied.");
+  }
+</script>
