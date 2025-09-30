@@ -1,3 +1,67 @@
+/* Dropdown container */
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 4px 4px 0 0;
+  display: block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* Show dropdown when checkbox is checked (mobile/tap) */
+.dropdown-toggle:checked + .dropbtn + .dropdown-content {
+  display: block;
+}
+
+/* Optional: close dropdown when clicking another (only one open at a time) */
+.dropdown-toggle:not(:checked) + .dropbtn + .dropdown-content {
+  display: none;
+}
 .dropdown {
   position: relative;
   display: inline-block;
