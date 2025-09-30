@@ -46,21 +46,9 @@
   background-color: #f1f1f1;
 }
 
-/* Show dropdown on hover (desktop) */
-@media (hover: hover) and (pointer: fine) {
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
-
-/* Show dropdown when checkbox is checked (mobile/tap) */
-.dropdown-toggle:checked + .dropbtn + .dropdown-content {
+/* Show dropdown when .active is set by JS */
+.dropdown.active .dropdown-content {
   display: block;
-}
-
-/* Optional: close dropdown when clicking another (only one open at a time) */
-.dropdown-toggle:not(:checked) + .dropbtn + .dropdown-content {
-  display: none;
 }
 .dropdown {
   position: relative;
