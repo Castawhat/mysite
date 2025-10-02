@@ -1,113 +1,65 @@
-.feature-card .button-row {
-    display: flex;
-    gap: 12px;
-    margin-top: 1.2rem;
-    flex-wrap: wrap;
-}
-/* General styles */
-body {
-    text-align: center;
-    background: azure;
-    color: blue;
-    font-family: "ABeeZee", sans-serif;
-    margin: 0;
-    padding-bottom: 60px; /* for footer space */
+/* --- Improved Text Hierarchy and Spacing --- */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    color: #0033cc;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.1;
 }
 
-header {
-    background: lightblue;
-    padding: 10px;
-    text-align: left;
-    font-family: "ABeeZee", sans-serif;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
-footer {
-    background: azure;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-family: "ABeeZee", sans-serif;
-    left: 0;
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+    color: #1a237e;
+    font-weight: 500;
 }
 
-button {
-    background-color: lightblue;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    font-family: "ABeeZee", sans-serif;
-    border-radius: 8px;
-    font-size: 1rem;
+p, li {
+    font-size: 1.15rem;
+    color: #1a237e;
+    margin-bottom: 1.1rem;
 }
 
-.abeezee-regular {
-    font-family: "ABeeZee", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.hero-text p {
+    font-size: 1.25rem;
+    color: #0033cc;
+    margin-bottom: 0;
 }
-
-.abeezee-regular-italic {
-    font-family: "ABeeZee", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-/* Navigation */
-.nav-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-/* Responsive images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    max-width: 1000px;
-    margin: 3rem auto 2rem auto;
-    padding: 0 1rem;
-}
-
 
 .hero-box,
 .feature-card {
     max-width: 1200px;
-    margin: 2rem auto;
-    border-radius: 24px;
+    margin: 2.5rem auto;
+    border-radius: 28px;
     background: lightblue;
-    box-shadow: 0 4px 24px rgba(99,102,241,0.08);
-    padding: 2.5rem 2.5rem;
+    box-shadow: 0 6px 32px rgba(99,102,241,0.10);
+    padding: 3rem 3rem 2.5rem 3rem;
     box-sizing: border-box;
 }
 
 .feature-card {
     border: 2px solid #b3e0ff;
-    color: blue;
+    color: #1a237e;
     transition: box-shadow 0.2s, transform 0.2s;
     text-align: left;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
 }
 
 .hero-text {
     flex: 2;
     text-align: left;
+    padding-right: 2rem;
 }
 
 .hero-image {
@@ -115,182 +67,132 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    min-width: 180px;
 }
 
 .profile-pic {
     width: 180px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 16px;
     object-fit: cover;
     border: 4px solid #a5b4fc;
     background: #f6f8fa;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(99,102,241,0.10);
     max-width: 100%;
 }
 
-/* Info Grid Section */
-.info-grid {
+.feature-card h2 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature-card ul, .feature-card p {
+    color: #1a237e;
+    font-size: 1.15rem;
+}
+
+.feature-card a {
+    color: #0033cc;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.feature-card a:hover {
+    color: #1a237e;
+}
+/* --- End Improved Text Hierarchy --- */
+
+.feature-card .button-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.2rem;
+    flex-wrap: wrap;
+}
+
+/* --- Feature 4-Box Grid --- */
+.four-grid {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    margin-top: 2.5rem;
+}
+
+.feature-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-    padding: 2rem;
-    margin: 0 auto 2rem auto;
-    max-width: 900px;
+    margin: 0;
 }
 
-    .feature-card {
-        background: lightblue;              /* Matches your header */
-        border: 2px solid #b3e0ff;         /* Slightly lighter blue border for subtle contrast */
-        border-radius: 16px;
-        box-shadow: 0 2px 12px rgba(99,102,241,0.08);
-        padding: 2rem;
-        margin: 1.5rem 0;
-        text-align: left;
-        color: blue;                        /* Matches your site text color */
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: box-shadow 0.2s, transform 0.2s;
-    }
-
-    .feature-card h2 {
-        color: #0074d9; /* A deeper blue for heading */
-        margin-top: 0;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .feature-card ul, .feature-card p {
-        color: blue;
-        font-size: 1.1rem;
-    }
-
-    .feature-card a {
-        color: #005fa3;
-        text-decoration: underline;
-        transition: color 0.2s;
-    }
-
-    .feature-card a:hover {
-        color: #6366f1;
-    }
-
-    .feature-card .feature-tags {
-        margin: 1rem 0 0 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    .feature-card .feature-tag {
-        background: azure;
-        color: blue;
-        border-radius: 8px;
-        padding: 0.3em 0.8em;
-        font-size: 0.95em;
-        font-weight: bold;
-        display: inline-block;
-    }
-
-    @media (max-width: 700px) {
-        .feature-card {
-            padding: 1rem;
-            font-size: 1rem;
-        }
-        .feature-card h2 {
-            font-size: 1.2rem;
-        }
-    }
-.card {
-    background: #f1f5f9;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.03);
-    transition: transform 0.2s, box-shadow 0.2s;
-    font-size: 1.1rem;
+.feature-box {
+    background: lightblue;
+    border: 2px solid #b3e0ff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(99,102,241,0.08);
+    padding: 2rem 2rem 1.5rem 2rem;
+    color: #1a237e;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.card:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 6px 24px rgba(99,102,241,0.10);
+.feature-box-outer {
+    background: lightblue;
+    border: 2.5px solid #b3e0ff;
+    border-radius: 24px;
+    box-shadow: 0 6px 32px rgba(99,102,241,0.10);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    margin-top: 1.5rem;
 }
 
-/* Responsive Design */
-@media (max-width: 1000px) {
-    .hero {
-        max-width: 100%;
-    }
-    .info-grid {
-        max-width: 100%;
-    }
+.feature-box-inner {
+    background: #e6f4fa;
+    border: 1.5px solid #b3e0ff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(99,102,241,0.06);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    color: #1a237e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.feature-box-inner h2 {
+    color: #0033cc;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+}
+
+.feature-box-inner p {
+    color: #1a237e;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+
+.feature-box-inner:hover {
+    box-shadow: 0 6px 24px rgba(99,102,241,0.13);
+    transform: translateY(-3px) scale(1.015);
 }
 
 @media (max-width: 900px) {
-    .info-grid {
+    .feature-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
-        padding: 1rem;
-        gap: 1rem;
+        gap: 1.2rem;
+    }
+    .feature-box-outer {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
     }
 }
+/* --- End Feature 4-Box Grid --- */
 
-@media (max-width: 800px) {
-    .hero-content {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .hero-image {
-        justify-content: center;
-    }
-    .profile-pic {
-        width: 120px;
-        border-radius: 8px;
-    }
-    .hero-box {
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 700px) {
-    .button-container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
-        padding: 0 10px;
-    }
-    .dropdown {
-        width: 100%;
-    }
-    .dropbtn {
-        width: 100%;
-        text-align: left;
-        font-size: 1.1em;
-    }
-    .dropdown-content {
-        min-width: unset;
-        width: 100%;
-        position: static;
-        box-shadow: none;
-        border-radius: 0 0 8px 8px;
-    }
-    .dropdown-content a {
-        font-size: 1em;
-        padding: 12px 20px;
-    }
-}
-
-/* Hero colored variant */
-.hero-colored {
-    background: lightblue;
-}
 /* General styles */
 body {
     text-align: center;
@@ -299,6 +201,10 @@ body {
     font-family: "ABeeZee", sans-serif;
     margin: 0;
     padding-bottom: 60px; /* for footer space */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    cursor: none !important;
 }
 
 header {
@@ -310,12 +216,18 @@ header {
 
 footer {
     background: azure;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 4px 0;
     width: 100%;
     font-family: "ABeeZee", sans-serif;
-    left: 0;
+    text-align: center;
+    border-top: 1px solid #b3e0ff;
+    margin-top: 0.5rem;
+    position: static;
+}
+
+main {
+    margin-bottom: 3.5rem;
+    flex: 1;
 }
 
 button {
@@ -440,6 +352,18 @@ img {
     box-shadow: 0 6px 24px rgba(99,102,241,0.10);
 }
 
+/* --- Unify Hero and Feature Box Sizing --- */
+.hero-box,
+.feature-box-outer {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    border-radius: 24px;
+    background: lightblue;
+    box-shadow: 0 6px 32px rgba(99,102,241,0.10);
+    padding: 3rem 3rem 2.5rem 3rem;
+    box-sizing: border-box;
+}
+
 /* Responsive Design */
 @media (max-width: 1000px) {
     .hero {
@@ -509,3 +433,12 @@ img {
 .hero-colored {
     background: lightblue;
 }
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+/* --- Fun Custom Cursor --- */
+/* Removed emoji cursor code */
+/* --- End Fun Custom Cursor --- */
