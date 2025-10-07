@@ -438,7 +438,41 @@ html, body {
     height: 100%;
     min-height: 100%;
 }
+/* --- Tracker Section --- */
+.tracker-section {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center within the section */
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    border-radius: 24px;
+    background: lightblue;
+    box-shadow: 0 6px 32px rgba(99,102,241,0.10);
+    padding: 3rem 3rem 2.5rem 3rem;
+    box-sizing: border-box;
+}
 
-/* --- Fun Custom Cursor --- */
-/* Removed emoji cursor code */
-/* --- End Fun Custom Cursor --- */
+.tracker-box {
+    width: 100%; /* Ensures it fills section width */
+    max-width: 600px; /* Optional: limit line length */
+    text-align: left;
+    font-family: "ABeeZee", sans-serif;
+    color: #1a237e;
+    line-height: 1.6;
+}
+
+.tracker-box h1 {
+    font-size: 2.5rem;
+    color: #0033cc;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.tracker-box p {
+    font-size: 1.2rem;
+    color: #1a237e;
+    margin: 0.5rem 0;
+    transition: opacity 0.4s ease;
+    text-align: left;
+}
