@@ -268,6 +268,23 @@ img {
     height: auto;
 }
 
+/* Last.fm / music widget styles */
+.lastfm-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 6px 0 0 0;
+}
+.lastfm-list li {
+    background: rgba(255,255,255,0.6);
+    margin: 4px 0;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+.tracker-box #lastfm {
+    margin-top: 6px;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
