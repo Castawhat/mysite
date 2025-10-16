@@ -493,3 +493,26 @@ html, body {
     transition: opacity 0.4s ease;
     text-align: left;
 }
+
+/* Countdown styles */
+.countdown-section {
+    max-width: 1000px;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+}
+.countdown-box {
+    display: inline-block;
+    background: #e6f4fa;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #b3e0ff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+#countdown {
+    font-weight: 700;
+    color: #0033cc;
+}
+#countdown-timer {
+    color: #0056b3;
+    margin-left: 6px;
+}

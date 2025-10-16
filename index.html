@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="9942e529-74fa-4df8-9eb2-d4d670aa1d1e"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div id="custom-cursor"></div>
@@ -25,6 +27,12 @@
         </nav>
     </header>
 <main>
+    <!-- Countdown to Oct 27, 2025 -->
+    <section class="countdown-section">
+      <div class="countdown-box">
+        <div id="countdown">Countdown: <span id="countdown-timer">-- days --:--:--</span></div>
+      </div>
+    </section>
     <section class="hero">
   <div class="hero-box hero-colored">
     <div class="hero-content">
@@ -51,7 +59,8 @@
   <div class="tracker-box">
     <h1>Fun Lil' Stats</h1>
     <p id="time"></p>
-  <p id="lastfm"></p>
+    <p id="lastfm"></p>
+     <p id="visitors">Visitors: ...</p>
     
   </div>
 </section>
@@ -88,6 +97,7 @@
     </footer>
 <script src="tracking.js"></script>
 <script src="script.js"></script>
+<script src="count.js"></script>
 
 </body>
 </html>
