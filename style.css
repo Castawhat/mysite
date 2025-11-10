@@ -1,11 +1,6 @@
 /* --- Improved Text Hierarchy and Spacing --- */
-h1, h2, h3, p, li { box-sizing: border-box; }
-
-/* Slightly smaller base font so the site isn't oversized on desktop */
-html { font-size: 15px; }
-
 h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin-bottom: 1.2rem;
     color: #0033cc;
     font-weight: 700;
@@ -14,7 +9,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: #0056b3;
     font-weight: 600;
@@ -22,20 +17,20 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 0.7rem;
     color: #1a237e;
     font-weight: 500;
 }
 
 p, li {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #1a237e;
     margin-bottom: 1.1rem;
 }
 
 .hero-text p {
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     color: #0033cc;
     margin-bottom: 0;
 }
@@ -450,57 +445,6 @@ img {
         padding: 12px 20px;
     }
 }
-
-/* Desktop scaling: tone down very large sizes on wide screens */
-/* Stronger desktop scaling */
-@media (min-width: 1000px) {
-    /* moderate root size for large viewports */
-    html { font-size: 15px; }
-
-    /* cap main content width so everything doesn't stretch too wide */
-    .hero-box, .feature-box-outer, .tracker-section, .info-grid {
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* headings */
-    h1 { font-size: 2.2rem; }
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.1rem; }
-
-    /* body text */
-    p, li { font-size: 1.05rem; }
-
-        /* containers and spacing */
-            /* balanced paddings so boxes are neither too big nor too cramped */
-            .hero-box { padding: 1.6rem 1.8rem; border-radius: 18px; }
-            .feature-box-outer { padding: 1.6rem 1.6rem; border-radius: 18px; }
-            .feature-box, .feature-box-inner { padding: 1.1rem; }
-
-    /* profile image */
-    .profile-pic { width: 128px; }
-
-    /* tracker heading */
-    .tracker-box h1 { font-size: 1.6rem; }
-
-    /* nav sizing */
-    .nav-wrapper { margin: 12px 0; }
-    .nav-wrapper button { padding: 8px 14px; font-size: 1rem; }
-
-    button { padding: 8px 14px; font-size: 1rem; }
-
-    .hero-content { gap: 1rem; }
-        .countdown-box { padding: 0.5rem 0.9rem; }
-}
-
-@media (min-width: 1600px) {
-    html { font-size: 12px; }
-    h1 { font-size: 1.6rem; }
-    .hero-box, .feature-box-outer { max-width: 1000px; }
-}
-
-/* (global site scaling removed) */
 
 /* Hero colored variant */
 .hero-colored {
