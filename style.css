@@ -381,6 +381,22 @@ img {
     box-sizing: border-box;
 }
 
+/* Button Grid styles */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 88px);
+  gap: 5px;
+  justify-content: center;
+  margin: 10px auto;
+  max-width: 300px;
+}
+
+.button-grid img {
+  display: block;
+  width: 88px;
+  height: 31px;
+}
+
 /* Responsive Design */
 @media (max-width: 1000px) {
     .hero {
