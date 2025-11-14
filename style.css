@@ -397,6 +397,10 @@ img {
   height: 31px;
 }
 
+.button-grid a {
+  text-decoration: none;
+}
+
 /* Responsive Design */
 @media (max-width: 1000px) {
     .hero {
